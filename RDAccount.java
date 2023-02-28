@@ -12,7 +12,7 @@ System.out.println("Enter the maturity period : ");
 int maturity=sc.nextInt();
 double interest=0;
 double rate=0;
-if(amount<=10000000 & age<=65 ){
+if(amount<=10000000 || age<=65 ){
 if(maturity == 6){
 interest=7.50;
 rate=amount*interest/100;
@@ -44,7 +44,7 @@ rate=amount*interest/100;
 System.out.println("Rate : "+rate);
 }
 }
-else if(amount>10000000 & age>65 ){
+else if(amount>10000000 || age>65 ){
 if(maturity<=6){
 interest=8.00;
 rate=amount*interest/100;
